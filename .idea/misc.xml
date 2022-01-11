@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android projects/FOODMANIA/app/src/main/res/drawable/btn_background.xml" value="0.2484375" />
+        <entry key="..\:/Android projects/FOODMANIA/app/src/main/res/drawable/btn_background2.xml" value="0.2484375" />
+        <entry key="..\:/Android projects/FOODMANIA/app/src/main/res/drawable/edittext_background.xml" value="0.2484375" />
+        <entry key="..\:/Android projects/FOODMANIA/app/src/main/res/layout/activity_detail.xml" value="0.23229166666666667" />
+        <entry key="..\:/Android projects/FOODMANIA/app/src/main/res/layout/activity_main.xml" value="0.21822916666666667" />
+        <entry key="..\:/Android projects/FOODMANIA/app/src/main/res/layout/activity_oder.xml" value="0.23229166666666667" />
+        <entry key="..\:/Android projects/FOODMANIA/app/src/main/res/layout/activity_splash.xml" value="0.23229166666666667" />
+        <entry key="..\:/Android projects/FOODMANIA/app/src/main/res/layout/order_sample.xml" value="0.264" />
+        <entry key="..\:/Android projects/FOODMANIA/app/src/main/res/layout/sample_layout.xml" value="0.23229166666666667" />
+        <entry key="..\:/Android projects/FOODMANIA/app/src/main/res/menu/menu.xml" value="0.23229166666666667" />
+        <entry key="..\:/Android projects/FOODMANIA/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2484375" />
+        <entry key="..\:/Android projects/FOODMANIA/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2484375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
