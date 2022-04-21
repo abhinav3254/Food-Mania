@@ -7,30 +7,35 @@ import android.os.Bundle;
 
 public class SplashActivity extends AppCompatActivity {
 
+    final int splashTimeOut = 3000;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
 
-        getSupportActionBar().hide(); // this is will my action bar
+        getSupportActionBar().hide();
 
-        Thread thread = new Thread(){
-
-
-            public void run(){
+        Thread splashThread = new Thread(){
+            int wait = 0;
+            @Override
+            public void run() {
                 try {
-                    sleep(4000);
-                }catch (Exception e){
-                    e.printStackTrace();
-                }finally {
-
-                    Intent intent = new Intent(SplashActivity.this,MainActivity.class);
-                    startActivity(intent);
-                    finish(); //  if we don't add this method then it will again move us to splash screen to prevent this.
+                    super.run();
+                    while(wait < splashTimeOut){
+                        sleep(100);
+                        wait += 100;
+                    }
+                } catch (Exception e) {
+                }finally{
+                    startActivity(new Intent(SplashActivity.this,MainActivity.class));
+                    finish();
                 }
             }
-        };thread.start();
+        };
+        splashThread.start();
 
     }
 }
