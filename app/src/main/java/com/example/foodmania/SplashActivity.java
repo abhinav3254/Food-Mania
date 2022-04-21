@@ -30,7 +30,7 @@ public class SplashActivity extends AppCompatActivity {
                     }
                 } catch (Exception e) {
                 }finally{
-                    startActivity(new Intent(SplashActivity.this,MainActivity.class));
+                    startActivity(new Intent(SplashActivity.this,ActivityLogInPage.class));
                     finish();
                 }
             }
