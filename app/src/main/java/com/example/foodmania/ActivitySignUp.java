@@ -56,7 +56,11 @@ public class ActivitySignUp extends AppCompatActivity {
 
                 if(uname.isEmpty()||password.isEmpty()||rname.isEmpty()||phone.isEmpty()) {
                     Toast.makeText(ActivitySignUp.this, "Can't Be Empty", Toast.LENGTH_SHORT).show();
-                } else {
+                }
+                if(phone.length()>10 || phone.charAt(0)<5) {
+                    Toast.makeText(ActivitySignUp.this, "Phone Number Invalid", Toast.LENGTH_SHORT).show();
+                }
+                else {
                     boolean result = dbHelper.checkUser(uname);
                     if(result == false) {
                         boolean Rresult = dbHelper.insertData(uname,rname,password,phone);
