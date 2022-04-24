@@ -66,7 +66,7 @@ public class ActivitySignUp extends AppCompatActivity {
                         boolean Rresult = dbHelper.insertData(uname,rname,password,phone);
                         if(Rresult == true) {
                             Toast.makeText(ActivitySignUp.this, "Success\nNow you can login", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(ActivitySignUp.this,MainActivity.class);
+                            Intent intent = new Intent(ActivitySignUp.this,ActivityLogInPage.class);
                             startActivity(intent);
                             finish();
                         } else {
